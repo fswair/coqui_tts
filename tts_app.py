@@ -18,7 +18,7 @@ class VoiceGen(BaseModel):
         return self.tts.tts_to_file(text=text, speaker_wav=self.speaker, language=self.language, file_path=output_path, split_sentences=bool(split_sentences), **options)
 
 tts = VoiceGen(
-    speaker="tts/tests/data/ljspeech/wavs/LJ001-0001.mp3",
+    speaker="LJ001-0004.mp3",
     tts_model="tts_models/multilingual/multi-dataset/xtts_v2",
     language="tr"
 )
